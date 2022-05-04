@@ -1,4 +1,4 @@
-import { readFileSync, realpathSync } from 'fs';
+import { readFileSync } from 'fs';
 import { join, dirname } from 'path';
 
 export const getReactScriptsPath = (): string => {
@@ -33,13 +33,13 @@ export const getReactScriptsPath = (): string => {
      * Try to find the scripts package by following the `react-scripts` symlink.
      * This won't work for Windows users, unless within WSL.
      */
-    try {
-      const resolvedBinPath = realpathSync(scriptsBinPath);
-      const scriptsPath = join(resolvedBinPath, '..', '..');
-      return scriptsPath;
-    } catch (e) {
-      // NOOP
-    }
+    // try {
+    //   const resolvedBinPath = realpathSync(scriptsBinPath);
+    //   const scriptsPath = join(resolvedBinPath, '..', '..');
+    //   return scriptsPath;
+    // } catch (e) {
+    //   // NOOP
+    // }
   }
 
   /*

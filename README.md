@@ -1,5 +1,7 @@
 # Storybook Presets
 
+**Deprecated**: here is a workaround for the issue this fork tries to solve: https://github.com/storybookjs/presets/issues/242#issuecomment-1259806359
+
 ![CI](https://github.com/storybookjs/presets/workflows/CI/badge.svg)
 
 Storybook presets are grouped collections of babel, webpack, and addons configurations that support specific use cases.
